@@ -1,0 +1,13 @@
+you can do a euler stability analysis where lambda(x) = - 2cos(x) and y' = lambda(x)y.
+
+the euler amplification factor = 1 - 2hcos(xn)
+
+Euler is stable when |1+hlambda| < 1 so when |1 - 2hcos(xn)| < 1
+
+when cos(xn) > 0 then its stable when 0 < hcos(xn) < 1 or h < 1/(cos(xn))
+
+when cos(xn) < 0 then |1+hlambda| < 1 does not necessarily hold true. 
+
+bounding conditions for y(x) = e^(-2sinx), sinx is in the range [-1,1] so e^-2 <= y(x) <= e^2 so the exact solution is bounded.
+
+This tells us that smaller h is more stable and stable h < 1 on cos(xn) > 0, and also that larger h is less stable and becomes unstable. 
